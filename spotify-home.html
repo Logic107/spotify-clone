@@ -1,0 +1,393 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+<style>
+    * {
+        margin: 0;
+        padding: 0;
+    }
+
+    .box {
+        border: 3px solid gray;
+        border-radius: 9px;
+        width: 22%;
+        height: 250px;
+        font-size: 30px;
+        background-color: rgb(77, 74, 74);
+
+    }
+
+    .list-content {
+        display: flex;
+        justify-content: space-around;
+        flex-wrap: wrap;
+    }
+
+    .web-bgc {
+        background-color: black;
+    }
+
+    .div-bgc {
+
+        background-color: rgb(22, 22, 22);
+        padding: 3px;
+        border-radius: 9px;
+    }
+
+    .icon-text-size {
+        font-size: 35px;
+        margin: 5px;
+    }
+
+    .text-color {
+        color: white;
+    }
+
+    .div-display {
+        display: inline-block;
+        width: 35%;
+    }
+
+    .r-div-display {
+        width: 64%;
+    }
+
+    .div-space {
+        margin: 9px;
+    }
+
+    .margin {
+        margin: 20px;
+    }
+
+    .sub-margin {
+        margin: 8px;
+    }
+
+    .overflow {
+        overflow: auto;
+        height: 210px;
+        margin: 10px;
+    }
+
+    .btn {
+        color: black;
+        background-color: white;
+        border-radius: 40px;
+        margin: 8px;
+        padding: 20px;
+        padding-left: 30px;
+        padding-right: 30px;
+        font-size: 25px;
+        list-style-type: none;
+        cursor: pointer;
+    }
+
+    .nav-bar {
+        font-size: 25px;
+        padding: 10px;
+        list-style-type: none;
+    }
+
+    /* .overflow:hover{
+        overflow: auto;
+    } */
+    ::-webkit-scrollbar {
+        width: 5px;
+    }
+
+    ::-webkit-scrollbar-thumb {
+        background: red;
+    }
+
+    ::-webkit-scrollbar-track {
+        box-shadow: inset 0 0 5px white;
+    }
+
+    .flex {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+
+    .link-style {
+        height: fit-content;
+        list-style-type: none;
+    }
+
+    ul li a {
+        padding: 20px;
+        color: white;
+        font-size: 25px;
+        text-decoration: none;
+    }
+
+    #mybtn{
+        position: fixed;
+        bottom: 5px;
+        right: 25px;
+        opacity: .5;
+        width: 40px;
+        height: 30px;
+        border-radius: 5px;
+        background-color: rgb(219, 83, 83);
+        cursor: pointer;
+    }
+
+    @media screen and (max-width:1023px) {
+        .hide {
+            display: none;
+        }
+
+        .box {
+            width: 30%;
+        }
+    }
+</style>
+
+<body class="web-bgc flex">
+    <div class="left-page text-color  div-display">
+        <header class="div-bgc div-space">
+            <div class="home margin">
+                <i class="bi bi-house-fill  icon-text-size"></i>
+                <span class="icon-text-size">home</span>
+            </div>
+            <div class="search margin">
+                <i class="bi bi-search icon-text-size"></i>
+                <span class="icon-text-size">bi-search</span>
+            </div>
+        </header>
+
+        <div class="div-space div-bgc">
+            <div class="libarary div-space div-bgc">
+                <div class="library-head margin" style="display: flex; justify-content: space-between; ">
+                    <div class="l-h-l">
+                        <i class="bi bi-music-note-list icon-text-size"></i>
+                        <span class="icon-text-size">your library</span>
+                    </div>
+                    <div class="l-h-r">
+                        <span><i class="bi bi-folder-plus icon-text-size"></i></span>
+                    </div>
+                </div>
+            </div>
+            <div class="overflow div-space">
+                <div style="background-color:rgb(77, 74, 74); border-radius: 15px;margin: 5px;">
+                    <div style=" padding: 12px;">
+                        <div class="lib-head-one icon-text-size sub-margin" title="create your playlist">
+                            create your first playlist
+                        </div>
+                        <div class="lib-head-two sub-margin" style="font-size: 30px;">
+                            it's easy, we'll help you
+                        </div>
+                        <button class="btn">
+                            create playlist
+                        </button>
+                    </div>
+                </div>
+                <br>
+                <div style="background-color:rgb(77, 74, 74); border-radius: 20px;margin: 5px;">
+                    <div style=" padding: 12px;">
+                        <div class="lib-head-one icon-text-size sub-margin">
+                            lets find some podcast to follow
+                        </div>
+                        <div class="lib-head-two sub-margin" style="font-size: 30px;">
+                            we'll keep you updates to new episodes
+                        </div>
+                        <button class="btn" style="">browse
+                            podcast</button>
+                    </div>
+                </div>
+            </div>
+            <div class="margin">
+                <ul class="flex link-style">
+                    <li><a href="">legal </a></li>
+                    <li><a href="">privacy center</a></li>
+                    <li><a href="">privacy policy</a></li>
+                    <li><a href="">cookies</a></li>
+                    <li><a href="">about ads</a></li>
+                    <li><a href="">accessibility</a></li>
+                </ul>
+            </div>
+            <div class="margin link-style">
+                <ul class="flex link-style">
+                    <li><a href="">cookies</a></li>
+                </ul>
+            </div>
+            <div class="button">
+
+            </div>
+        </div>
+    </div>
+    <div class="right-page text-color r-div-display" style="border: 2px solid red;">
+
+        <!-- nav-bar -->
+        <div class="flex" style="background-color:rgb(38, 3, 3);">
+            <ul class="nav-bar sub-margin">
+                <li class=" sub-margin" style="font-size: 25px;padding: 20px;"><i>icon</i></li>
+            </ul>
+            <ul class="nav-bar" style="display: flex;">
+                <li class=" sub-margin" style="font-size: 25px;padding: 20px;">sign up</li>
+                <li>
+                    <button class="btn">
+                        log in
+                    </button>
+                </li>
+
+            </ul>
+        </div>
+        <div class="overflow" style="height:590px;">
+            <!-- first-list-of-content -->
+            <div class="first-list">
+                <div class="list-head">
+                    <ul class="flex link-style nav-bar">
+                        <li>spotify playlist</li>
+                        <li>show all</li>
+                    </ul>
+                </div>
+                <div>
+                    <ul class="list-content link-style">
+                        <li class="box">1</li>
+                        <li class="box">2</li>
+                        <li class="box">3</li>
+                        <li class="box hide">4</li>
+                    </ul>
+                </div>
+            </div><br>
+
+            <!-- second-list -->
+            <div class="first-list">
+                <div class="list-head">
+                    <ul class="flex link-style nav-bar">
+                        <li>focus</li>
+                        <li>show all</li>
+                    </ul>
+                </div>
+                <div>
+                    <ul class="list-content link-style">
+                        <li class="box">1</li>
+                        <li class="box">2</li>
+                        <li class="box">3</li>
+                        <li class="box hide">4</li>
+                    </ul>
+                </div>
+            </div><br>
+
+            <!-- third-list -->
+            <div class="first-list">
+                <div class="list-head">
+                    <ul class="flex link-style nav-bar">
+                        <li>sound india</li>
+                        <li>show all</li>
+                    </ul>
+                </div>
+                <div>
+                    <ul class="list-content link-style">
+                        <li class="box">1</li>
+                        <li class="box">2</li>
+                        <li class="box">3</li>
+                        <li class="box hide">4</li>
+                    </ul>
+                </div>
+            </div><br>
+
+            <!-- forth-list -->
+            <div class="first-list">
+                <div class="list-head">
+                    <ul class="flex link-style nav-bar">
+                        <li>your playlist</li>
+                        <li>show all</li>
+                    </ul>
+                </div>
+                <div>
+                    <ul class="list-content link-style">
+                        <li class="box">1</li>
+                        <li class="box">2</li>
+                        <li class="box">3</li>
+                        <li class="box hide">4</li>
+                    </ul>
+                </div>
+            </div><br>
+
+            <!-- fifth-list  -->
+            <div class="first-list">
+                <div class="list-head">
+                    <ul class="flex link-style nav-bar">
+                        <li>recomended</li>
+                        <li>show all</li>
+                    </ul>
+                </div>
+                <div>
+                    <ul class="list-content link-style">
+                        <li class="box">1</li>
+                        <li class="box">2</li>
+                        <li class="box">3</li>
+                        <li class="box hide">4</li>
+                    </ul>
+                </div>
+            </div><br>
+            <footer>
+                <div class="list-content" style="width: 70%; ">
+                    <ul class="nav-bar">
+                        <li style="margin-bottom: 4px;"><u>company</u></li>
+                        <li>about</li>
+                        <li>job</li>
+                        <li>for the records</li>
+                    </ul>
+                    <ul class="nav-bar">
+                        <li style="margin-bottom: 4px;"><u>communities</u></li>
+                        <li>for artists</li>
+                        <li>developers</li>
+                        <li>advertising</li>
+                        <li>investors</li>
+                        <li>vendors</li>
+                    </ul>
+                    <ul class="nav-bar">
+                        <li style="margin-bottom: 4px;"><u>usefull links</u></li>
+                        <li>support</li>
+                        <li>free mobile app</li>
+                    </ul>
+                    
+                </div>
+            </footer>
+        </div>
+    </div>
+    <button id="mybtn" onclick="topFunction()">up</button>
+</body>
+<script>
+    // // Get the button
+    // let mybutton = document.getElementById("myBtn");
+    // mybutton.addEventListener("click" , function()
+    // {
+    //     window.scrollTo({
+    //         top:0,left:0,behavior:"smooth"
+    //     });
+    // });
+
+
+
+    let mybutton = document.getElementById("myBtn");
+
+// When the user scrolls down 20px from the top of the document, show the button
+window.onscroll = function() {scrollFunction()};
+
+function scrollFunction() {
+  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+    mybutton.style.display = "block";
+  } else {
+    mybutton.style.display = "none";
+  }
+}
+
+// When the user clicks on the button, scroll to the top of the document
+function topFunction() {
+  document.body.scrollTop = 0;
+  document.documentElement.scrollTop = 0;
+}
+</script>
+
+</html>
